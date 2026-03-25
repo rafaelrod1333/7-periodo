@@ -1,5 +1,5 @@
 import { View } from "react-native";
-import { CustomModalScreen } from "../../components/modal";
+import { CustomModalScreen } from "../../components/custom-modal-screen";
 
 
 export function ModalScreen() {

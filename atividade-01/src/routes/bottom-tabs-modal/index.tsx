@@ -1,17 +1,16 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; 
-import { NavigationContainer } from '@react-navigation/native'; 
-import { CustomModalScreen } from '../../components/modal';
+import { CustomModalScreen } from '../../components/custom-modal-screen';
 
 
 const BottomTabs = createBottomTabNavigator(); 
 
-export function BottomTabsNav(){
+export function BottomTabsModalNav(){
     return(
            <BottomTabs.Navigator  
-          screenOptions={{  
-            headerShown: false,
-            tabBarLabelStyle: { fontSize: 12, fontWeight: 'bold' }, 
-            tabBarActiveTintColor: '#000', 
+            screenOptions={{  
+              headerShown: false,
+              tabBarLabelStyle: { fontSize: 12, fontWeight: 'bold' }, 
+              tabBarActiveTintColor: '#000', 
           }} 
         > 
           <BottomTabs.Screen name="SLIDE"> 

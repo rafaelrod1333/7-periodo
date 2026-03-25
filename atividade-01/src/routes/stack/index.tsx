@@ -6,7 +6,7 @@ const Stack = createStackNavigator();
 
 export function StackNav() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen name="HomeScreen" component={Welcome} />
       <Stack.Screen name="Drawer" component={DrawerNav} />
     </Stack.Navigator>
